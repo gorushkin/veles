@@ -37,6 +37,20 @@
   }
 }
 
+.header__menu-btn {
+  width: 50px;
+  height: 50px;
+  background: red;
+  display: none;
+
+  @include mobile {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+
+
 .header__breadcrumbs {
   @media (max-width: 1100px) {
     order: 3;
@@ -50,15 +64,39 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+
+  @include mobile {
+    display: none;
+    flex-direction: column;
+  }
+}
+
+.header__menu-input:checked + .breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .breadcrumbs__link {
   padding: 11px 14px;
+  width: 100%;
+
+  &:hover {
+    background: red;
+  }
 }
 
 .header__contacts {
   @include tablet {
     order: 1;
+  }
+
+  @include mobile {
+    display: none;
   }
 }
 
