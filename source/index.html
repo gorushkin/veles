@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,12 +16,12 @@
         <div class="header__logo">
           <a class="header-link" href="">Veles</a>
         </div>
-        <div class="header__menu-btn">
-          <label for="header__menu-input" class="header__menu-btn"></label>
+        <input type="checkbox" name="" id="header__menu-input" class="header__menu-input visually-hidden">
+        <div class="header__menu-btn-wrapper">
+          <label for="header__menu-input" class="header__menu-btn header__menu-btn--nojs"></label>
         </div>
         <nav class="header__breadcrumbs">
-          <input type="checkbox" name="" id="header__menu-input" class="header__menu-input visually-hidden">
-          <ul class="breadcrumbs__list">
+          <ul class="breadcrumbs__list breadcrumbs__list--hide breadcrumbs__list--nojs">
             <!-- <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">ЗЕМЛЯ</a></li>
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">крановые площадки</a></li>
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">выгрузка вагонов</a></li>
