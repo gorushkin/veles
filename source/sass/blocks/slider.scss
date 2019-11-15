@@ -1,0 +1,49 @@
+.swiper-container {
+  width: 976px;
+  height: 506px;
+  margin-left: auto;
+  margin-right: 0;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  background: url("../img/slide_1@1x.jpg") no-repeat center;
+  background-size: contain;
+
+  @include tablet {
+    background-size: cover;
+  }
+}
+
+.swiper-controls {
+  width: 200px;
+  position: absolute;
+  bottom: 150px;
+
+  @include tablet {
+    right: 20px;
+    bottom: 10px;
+  }
+}
+
+.swiper-button {
+  width: 50px;
+  height: 15px;
+  font-size: 0;
+
+  &--prev {
+    background: url("../../img/arrow-prev.svg") no-repeat center;
+  }
+
+  &--next {
+    background: url("../../img/arrow-next.svg") no-repeat center;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 0;
+}

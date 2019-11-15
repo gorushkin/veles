@@ -6,6 +6,7 @@
   color: $color-white;
   padding-top: 30px;
   position: relative;
+  margin-bottom: 150px;
 }
 
 .header__row {
@@ -70,14 +71,14 @@
 
   @include mobile {
     flex-direction: column;
-  }
 
-  &--hide {
-    display: none;
-  }
+    &--hide {
+      display: none;
+    }
 
-  &--show {
-    display: flex;
+    &--show {
+      display: flex;
+    }
   }
 }
 
@@ -148,49 +149,17 @@
   color: $color-dark;
   position: relative;
   z-index: 10;
+  background: inherit;
+  color: inherit;
 }
 
 .header__slider {
   position: absolute;
-  right: 0;
   bottom: -100px;
-  width: 1176px;
+  width: 100%;
+  color: #ffffff !important;
 }
 
-.swiper-container {
-  width: 976px;
-  height: 506px;
-  margin-left: auto;
-  margin-right: 0;
+.header {
+  color: black;
 }
-
-.swiper-slide {
-  background: url("../img/slide_1@1x.jpg") no-repeat center;
-  background-size: contain;
-}
-
-.swiper-controls {
-  width: 200px;
-  position: absolute;
-  bottom: 150px;
-}
-
-.swiper-button {
-  width: 50px;
-  height: 15px;
-  font-size: 0;
-
-  &--prev {
-    background: url("../../img/arrow-prev.svg") no-repeat center;
-  }
-
-  &--next {
-    background: url("../../img/arrow-next.svg") no-repeat center;
-  }
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 0;
-}
-
