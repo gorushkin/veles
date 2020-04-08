@@ -5,225 +5,360 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <meta name="description" content="Veles - ВЫГРУЗКА ВАГОНОВ, АРЕНДА ЗЕМЛИ, КРАНОВЫХ ПЛОЩАДОК, ОТВЕТСТВЕННОЕ ХРАНЕНИЕ">
+  <title>Veles</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="qwe">
   <header class="header">
-    <div class="wrapper">
-      <div class="header__row">
+    <div class="header__container">
+      <div class="wrapper">
         <div class="header__logo">
-          <a class="header-link" href="">Veles</a>
+          <a class="header-link" href="#">Veles</a>
         </div>
-        <input type="checkbox" name="" id="header__menu-input" class="header__menu-input visually-hidden">
-        <div class="header__menu-btn-wrapper">
-          <label for="header__menu-input" class="header__menu-btn header__menu-btn--nojs"></label>
-        </div>
-        <nav class="header__breadcrumbs">
-          <ul class="breadcrumbs__list breadcrumbs__list--hide breadcrumbs__list--nojs">
-            <!-- <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">ЗЕМЛЯ</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">крановые площадки</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">выгрузка вагонов</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">фасовка</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">щебень</a></li> -->
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">title</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">title</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">title</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">title</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link header-link">title</a></li>
+        <input tabindex="-1" type="checkbox" name="header__menu-input" id="header__menu-input"
+          class="header__menu-input visually-hidden">
+        <label for="header__menu-input" class="header__menu-btn header__menu-btn--nojs"></label>
+        <nav class="header__menu header__menu--hide header__menu--nojs menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link header-link">ЗЕМЛЯ</a></li>
+            <li class="menu__item"><a href="#" class="menu__link header-link">крановые площадки</a></li>
+            <li class="menu__item"><a href="#" class="menu__link header-link">выгрузка вагонов</a></li>
+            <li class="menu__item"><a href="#" class="menu__link header-link">фасовка</a></li>
+            <li class="menu__item"><a href="#" class="menu__link header-link">щебень</a></li>
+
           </ul>
         </nav>
-        <ul class="header__contacts contact__list">
-          <li class="contact__item"><a href="tel:+79276784514" class="contact__link header-link">+7 (927) 678-45-14</a>
+        <ul class="header__contacts contacts">
+          <li class="contacts__item"><a href="tel:+79276784514" class="contacts__link header-link">+7 (927)
+              678-45-14</a>
           </li>
-          <li class="contact__item"><a href="" class="contact__link header-link">г. Казань, Складская 20</a></li>
+          <li class="contacts__item"><a href="#" class="contacts__link header-link header-link--smaller">г. Казань,
+              Складская 20</a></li>
         </ul>
-      </div>
-      <!-- <div class="header__promo promo"> -->
-      <p class="header__promo-text">выгрузка вагонов, АРЕНДА ЗЕМЛИ, КРаНОВЫХ ПЛОЩАДОК, ответственное хранение</p>
-      <a href="" class="header__btn">ЗАКАЗАТЬ</a>
-      <!-- </div> -->
-    </div>
-    <div class="header__slider">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-        </div>
-      </div>
-      <div class="swiper-controls">
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button swiper-button--prev swiper-button-next"></div>
-        <div class="swiper-button swiper-button--next swiper-button-prev"></div>
       </div>
     </div>
   </header>
 
   <main class="main">
 
-    <section class="catalog wrapper">
-      <h2 class="catalog__title section__title">Чем мы можем быть полезны?</h2>
+    <section class="promo">
+      <div class="promo__container">
+        <h1 class="visually-hidden">Veles - ВЫГРУЗКА ВАГОНОВ, АРЕНДА ЗЕМЛИ, КРАНОВЫХ ПЛОЩАДОК, ОТВЕТСТВЕННОЕ ХРАНЕНИЕ
+        </h1>
+        <div class="wrapper">
+          <p>выгрузка вагонов, АРЕНДА ЗЕМЛИ, КРаНОВЫХ ПЛОЩАДОК, ответственное хранение</p>
+          <a href="#">ЗАКАЗАТЬ</a>
+          <div class="promo__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+            <div class="swiper-controls">
+              <div class="swiper-button swiper-button--next swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button swiper-button--prev swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2>Чем мы можем быть полезны?</h2>
       <ul class="catalog__list">
-        <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">Крановая площадка</h3>
+        <li class="catalog__item card card--with-map">
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img1@1x.webp 1x, img/catalog__img1@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img1@1x.jpg" data-srcset="img/catalog__img1@2x.jpg 2x" alt="Крановая площадка"
+                width="370" height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Крановая площадка</h3>
           </div>
         </li>
         <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">ТОВАРЫ СЕЛЬского хозяйства</h3>
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img2@1x.webp 1x, img/catalog__img2@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img2@1x.jpg" data-srcset="img/catalog__img2@2x.jpg 2x" alt="Товары сельского хозяйства"
+                width="370" height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Товары сельского хозяйства</h3>
           </div>
         </li>
         <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">ФАСОВКА от 300 гр до 1 тонны</h3>
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img3@1x.webp 1x, img/catalog__img3@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img3@1x.jpg" data-srcset="img/catalog__img3@2x.jpg 2x" alt="Фасовка от 300 гр до 1 тонн"
+                width="370" height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Фасовка от 300 гр до 1 тонн</h3>
           </div>
         </li>
         <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">ГРАНИТНЫЙ Щебень</h3>
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img4@1x.webp 1x, img/catalog__img4@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img4@1x.jpg" data-srcset="img/catalog__img4@2x.jpg 2x" alt="Гранитный щебень"
+                width="370" height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Гранитный щебень</h3>
+          </div>
+        </li>
+        <li class="catalog__item card card--with-map">
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img5@1x.webp 1x, img/catalog__img5@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img5@1x.jpg" data-srcset="img/catalog__img5@2x.jpg 2x" alt="Аренда земли" width="370"
+                height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Аренда земли</h3>
+          </div>
+        </li>
+        <li class="catalog__item card card--with-map">
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img6@1x.webp 1x, img/catalog__img6@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img6@1x.jpg" data-srcset="img/catalog__img6@2x.jpg 2x" alt="Аренда складов" width="370"
+                height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Аренда складов</h3>
           </div>
         </li>
         <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">Аренда земли</h3>
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img7@1x.webp 1x, img/catalog__img7@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img7@1x.jpg" data-srcset="img/catalog__img7@2x.jpg 2x"
+                alt="Выгрузка вагонов и ответственное хранение" width="370" height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+            <h3>Выгрузка вагонов и ответственное хранение</h3>
           </div>
         </li>
         <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">аренда складов</h3>
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img8@1x.webp 1x, img/catalog__img8@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img8@1x.jpg" data-srcset="img/catalog__img8@2x.jpg 2x"
+                alt="Автомобильные весы 18м, 80тн" width="370" height="345">
+            </picture>
+          </div>
+          <div class="card__title-wrapper">
+
+            <h3>Автомобильные весы 18м, 80тн</h3>
           </div>
         </li>
         <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">ВЫГРУЗКА ВАГОНОВ И ОТВЕТСТВЕННОЕ ХРАНЕНИЕ</h3>
+          <a href="#" class="card__link">
+            <span class="card__link-txt">Смотреть карту территорий</span>
+          </a>
+          <div class="card__img">
+            <picture>
+              <source type="image/webp" data-srcset="img/catalog__img9@1x.webp 1x, img/catalog__img9@2x.webp 2x">
+              <img class="lazy" data-src="img/catalog__img9@1x.jpg" data-srcset="img/catalog__img9@2x.jpg 2x"
+                alt="Железодорожные весы на 2 вагона" width="370" height="345">
+            </picture>
           </div>
-        </li>
-        <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">автомобильные весы 18м, 80тн</h3>
-          </div>
-        </li>
-        <li class="catalog__item card">
-          <div class="card__map-link">
-            <span>Смотреть карту территорий</span>
-            <img src="" alt="" class="card__img">
-            <h3 class="card__title">железодорожные весы на 2 вагона</h3>
+          <div class="card__title-wrapper">
+            <h3>Железодорожные весы на 2 вагона</h3>
           </div>
         </li>
       </ul>
     </section>
 
-    <!-- <section class="advantages">
+    <section class="advantages">
+      <h2>Наши преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <span class="advantages__number">01</span>
+          <p>11,5 га площадь базы</p>
+          <svg width="33" height="46" viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.76 38.08V46H2.2V38.08H13.56V10.16C13.08 10.8 12.3333 11.4667 11.32 12.16C10.3067 12.8533 9.18667 13.4933 7.96 14.08C6.73333 14.6667 5.45333 15.1733 4.12 15.6C2.78667 15.9733 1.61333 16.16 0.6 16.16V7.92C1.66667 7.92 2.89333 7.6 4.28 6.96C5.72 6.32 7.08 5.57333 8.36 4.72C9.69333 3.86667 10.84 3.01333 11.8 2.16C12.8133 1.30667 13.4 0.693332 13.56 0.319997H22.6V38.08H32.76Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">02</span>
+          <p>2 своих тепловоза</p>
+          <svg width="38" height="47" viewBox="0 0 38 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.2 47C0.2 44.76 0.386667 42.68 0.76 40.76C1.13333 38.84 1.8 37.0533 2.76 35.4C3.72 33.6933 5.02667 32.0933 6.68 30.6C8.33333 29.0533 10.4667 27.56 13.08 26.12C14.9467 25.1067 16.7067 24.1733 18.36 23.32C20.0133 22.4667 21.4533 21.64 22.68 20.84C23.96 19.9867 24.9733 19.1067 25.72 18.2C26.4667 17.24 26.84 16.1467 26.84 14.92C26.84 13.2133 26.0933 11.6933 24.6 10.36C23.16 8.97333 21.0533 8.28 18.28 8.28C16.84 8.28 15.5067 8.49333 14.28 8.92C13.1067 9.29333 12.0133 9.8 11 10.44C10.04 11.0267 9.18667 11.6933 8.44 12.44C7.69333 13.1867 7.02667 13.9067 6.44 14.6L0.84 8.12C1.37333 7.53333 2.2 6.81333 3.32 5.96C4.49333 5.05333 5.88 4.2 7.48 3.4C9.13333 2.6 11 1.93333 13.08 1.4C15.16 0.81333 17.4267 0.519998 19.88 0.519998C22.44 0.519998 24.7333 0.866665 26.76 1.56C28.84 2.2 30.5733 3.10666 31.96 4.28C33.4 5.45333 34.4933 6.86666 35.24 8.52C35.9867 10.12 36.36 11.8533 36.36 13.72C36.36 15.6933 35.96 17.4533 35.16 19C34.36 20.5467 33.3733 21.9067 32.2 23.08C31.0267 24.2533 29.7467 25.2667 28.36 26.12C26.9733 26.92 25.6933 27.6133 24.52 28.2C23.4 28.7333 22.12 29.3733 20.68 30.12C19.2933 30.8133 17.9333 31.64 16.6 32.6C15.2667 33.5067 14.0667 34.4933 13 35.56C11.9333 36.6267 11.1867 37.8 10.76 39.08H37.24V47H0.2Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">03</span>
+          <p>Повышенный путь для выгрузки инертных грузов</p>
+          <svg width="39" height="59" viewBox="0 0 39 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.52 28.12C29.1733 28.44 30.6933 29.0267 32.08 29.88C33.4667 30.68 34.64 31.6933 35.6 32.92C36.56 34.1467 37.3067 35.56 37.84 37.16C38.3733 38.76 38.64 40.4933 38.64 42.36C38.64 44.8667 38.16 47.1067 37.2 49.08C36.2933 51.1067 34.96 52.84 33.2 54.28C31.4933 55.72 29.4133 56.8133 26.96 57.56C24.5067 58.36 21.76 58.76 18.72 58.76C14.6667 58.76 11.0933 58.04 8 56.6C4.90667 55.2133 2.42667 53.1867 0.56 50.52L5.92 44.44C7.2 46.4133 8.85333 47.96 10.88 49.08C12.9067 50.2 15.4667 50.76 18.56 50.76C22.08 50.76 24.7733 50.0133 26.64 48.52C28.56 47.0267 29.52 44.7867 29.52 41.8C29.52 38.7067 28.4533 36.28 26.32 34.52C24.1867 32.76 21.04 31.88 16.88 31.88H14.72V25H17.12C20.6933 25 23.44 24.1733 25.36 22.52C27.28 20.8133 28.24 18.68 28.24 16.12C28.24 13.56 27.3867 11.6933 25.68 10.52C23.9733 9.29333 21.76 8.68 19.04 8.68C16.32 8.68 13.92 9.26666 11.84 10.44C9.76 11.6133 8.10667 13.2933 6.88 15.48L1.36 9.48C2.10667 8.2 3.12 7.05333 4.4 6.04C5.68 4.97333 7.12 4.06667 8.72 3.32C10.3733 2.52 12.1333 1.93333 14 1.56C15.92 1.13333 17.8933 0.919997 19.92 0.919997C22.5333 0.919997 24.9067 1.26666 27.04 1.96C29.2267 2.65333 31.0933 3.61333 32.64 4.84C34.24 6.06667 35.4667 7.56 36.32 9.32C37.1733 11.08 37.6 13.0267 37.6 15.16C37.6 16.76 37.36 18.28 36.88 19.72C36.4 21.16 35.7067 22.4667 34.8 23.64C33.9467 24.8133 32.9067 25.8 31.68 26.6C30.4533 27.3467 29.0667 27.8533 27.52 28.12Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">04</span>
+          <p>8 км от центра Казани</p>
+          <svg width="42" height="57" viewBox="0 0 42 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.32 56.16V43.44H0.76V35.6L28.12 0.319997H34.12V35.44H41.16V43.44H34.12V56.16H25.32ZM9.72 35.44H26.28V13.76L9.72 35.44Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">05</span>
+          <p>Возможность выгрузки хопров и сыпучих грузов</p>
+          <svg width="40" height="58" viewBox="0 0 40 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.8 20.64C23.4667 20.64 25.92 21.0933 28.16 22C30.4533 22.9067 32.4267 24.16 34.08 25.76C35.7867 27.36 37.0933 29.28 38 31.52C38.96 33.76 39.44 36.2133 39.44 38.88C39.44 41.7067 38.9067 44.2933 37.84 46.64C36.8267 48.9867 35.3867 50.9867 33.52 52.64C31.7067 54.3467 29.5467 55.6533 27.04 56.56C24.5333 57.4667 21.84 57.92 18.96 57.92C14.8533 57.92 11.1733 56.9867 7.92 55.12C4.66667 53.3067 2.18667 50.8267 0.48 47.68L5.76 42.64C7.25333 44.88 9.17333 46.6933 11.52 48.08C13.8667 49.4667 16.3733 50.16 19.04 50.16C22.3467 50.16 25.0667 49.1467 27.2 47.12C29.3333 45.0933 30.4 42.4 30.4 39.04C30.4 37.44 30.1067 36 29.52 34.72C28.9867 33.3867 28.24 32.2667 27.28 31.36C26.32 30.4 25.1733 29.6533 23.84 29.12C22.56 28.5867 21.1467 28.32 19.6 28.32C17.5733 28.32 15.68 28.7733 13.92 29.68C12.16 30.5333 10.72 31.8133 9.6 33.52H1.84C1.89333 33.3067 2 32.6667 2.16 31.6C2.37333 30.5333 2.64 29.2 2.96 27.6C3.28 26 3.62667 24.2133 4 22.24C4.37333 20.2667 4.77333 18.2667 5.2 16.24C6.16 11.4933 7.2 6.18666 8.32 0.319997H36.08V8.4H14.72L11.84 23.92C12.7467 22.9067 13.9467 22.1067 15.44 21.52C16.9867 20.9333 18.7733 20.64 20.8 20.64Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">06</span>
+          <p>Железнодорожные весы на 2 вагона</p>
+          <svg width="43" height="59" viewBox="0 0 43 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42.12 39.12C42.12 41.84 41.5867 44.4 40.52 46.8C39.5067 49.2 38.0667 51.3067 36.2 53.12C34.3867 54.88 32.2267 56.2667 29.72 57.28C27.2133 58.2933 24.52 58.8 21.64 58.8C18.4933 58.8 15.64 58.24 13.08 57.12C10.52 55.9467 8.33333 54.2933 6.52 52.16C4.70667 49.9733 3.29333 47.3333 2.28 44.24C1.32 41.0933 0.84 37.5467 0.84 33.6C0.84 28.16 1.34667 23.4133 2.36 19.36C3.42667 15.2533 4.89333 11.84 6.76 9.12C8.62667 6.34666 10.8933 4.26666 13.56 2.88C16.2267 1.49333 19.2133 0.799997 22.52 0.799997C26.1467 0.799997 29.4533 1.62666 32.44 3.28C35.48 4.93333 37.9333 7.28 39.8 10.32L34.6 15.76C33.3733 13.52 31.6667 11.76 29.48 10.48C27.3467 9.14666 24.9733 8.48 22.36 8.48C18.36 8.48 15.16 10.1867 12.76 13.6C10.4133 16.96 9.18667 21.7067 9.08 27.84C10.2533 25.44 12.0133 23.5467 14.36 22.16C16.7067 20.7733 19.4 20.08 22.44 20.08C25.2133 20.08 27.8 20.5867 30.2 21.6C32.6 22.56 34.68 23.8933 36.44 25.6C38.2 27.3067 39.5867 29.3333 40.6 31.68C41.6133 33.9733 42.12 36.4533 42.12 39.12ZM21.64 51.28C23.2933 51.28 24.84 50.96 26.28 50.32C27.7733 49.68 29.0533 48.8 30.12 47.68C31.24 46.56 32.12 45.28 32.76 43.84C33.4 42.3467 33.72 40.7733 33.72 39.12C33.72 37.4667 33.4 35.92 32.76 34.48C32.12 33.04 31.24 31.7867 30.12 30.72C29.0533 29.6 27.7733 28.72 26.28 28.08C24.84 27.44 23.2933 27.12 21.64 27.12C19.9867 27.12 18.4133 27.44 16.92 28.08C15.48 28.72 14.2 29.6 13.08 30.72C12.0133 31.7867 11.16 33.04 10.52 34.48C9.88 35.92 9.56 37.4667 9.56 39.12C9.56 40.7733 9.88 42.3467 10.52 43.84C11.16 45.28 12.0133 46.56 13.08 47.68C14.2 48.8 15.48 49.68 16.92 50.32C18.4133 50.96 19.9867 51.28 21.64 51.28Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">07</span>
+          <p>Автомобильные весы 18 м на 80 тонн</p>
+          <svg width="42" height="58" viewBox="0 0 42 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.76 8.44H0.24V0.36H41.68L13.28 57.16H3.28L27.76 8.44Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">08</span>
+          <p>3 пандуса для выгрузки и загрузки крытых вагонов и фур</p>
+          <svg width="42" height="58" viewBox="0 0 42 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.32 40.6C41.32 43.16 40.76 45.5067 39.64 47.64C38.5733 49.72 37.1067 51.5067 35.24 53C33.3733 54.4933 31.2133 55.64 28.76 56.44C26.3067 57.24 23.6933 57.64 20.92 57.64C18.0933 57.64 15.4267 57.2133 12.92 56.36C10.4667 55.4533 8.33333 54.2267 6.52 52.68C4.70667 51.1333 3.26667 49.2933 2.2 47.16C1.18667 45.0267 0.68 42.7067 0.68 40.2C0.68 38.5467 0.973334 37 1.56 35.56C2.14667 34.12 2.89333 32.84 3.8 31.72C4.76 30.5467 5.82667 29.5333 7 28.68C8.17333 27.8267 9.34667 27.1333 10.52 26.6C8.33333 25.64 6.46667 24.1733 4.92 22.2C3.37333 20.2267 2.6 17.9867 2.6 15.48C2.6 13.0267 3.16 10.8667 4.28 9C5.4 7.08 6.84 5.48 8.6 4.2C10.36 2.86666 12.3333 1.88 14.52 1.24C16.7067 0.546664 18.8667 0.199997 21 0.199997C23.1333 0.199997 25.2933 0.546664 27.48 1.24C29.72 1.88 31.72 2.84 33.48 4.12C35.2933 5.4 36.76 7 37.88 8.92C39 10.7867 39.56 12.9467 39.56 15.4C39.56 17.9067 38.76 20.1733 37.16 22.2C35.6133 24.1733 33.72 25.64 31.48 26.6C32.76 27.1867 33.9867 27.9333 35.16 28.84C36.3867 29.6933 37.4533 30.7333 38.36 31.96C39.2667 33.1333 39.9867 34.44 40.52 35.88C41.0533 37.32 41.32 38.8933 41.32 40.6ZM32.44 40.04C32.44 38.4933 32.0933 37.1333 31.4 35.96C30.76 34.7333 29.88 33.6933 28.76 32.84C27.6933 31.9867 26.4667 31.3467 25.08 30.92C23.7467 30.4933 22.3867 30.28 21 30.28C19.56 30.28 18.1467 30.52 16.76 31C15.4267 31.4267 14.2267 32.0667 13.16 32.92C12.1467 33.7733 11.32 34.8133 10.68 36.04C10.04 37.2133 9.72 38.5467 9.72 40.04C9.72 41.5333 10.04 42.8933 10.68 44.12C11.3733 45.2933 12.2533 46.3067 13.32 47.16C14.3867 47.96 15.5867 48.6 16.92 49.08C18.3067 49.5067 19.6933 49.72 21.08 49.72C22.52 49.72 23.9067 49.48 25.24 49C26.6267 48.52 27.8533 47.8533 28.92 47C29.9867 46.1467 30.84 45.1333 31.48 43.96C32.12 42.7867 32.44 41.48 32.44 40.04ZM11.48 15.8C11.48 17.08 11.7733 18.2 12.36 19.16C12.9467 20.12 13.6933 20.92 14.6 21.56C15.5067 22.2 16.52 22.7067 17.64 23.08C18.76 23.4 19.88 23.56 21 23.56C22.12 23.56 23.24 23.4 24.36 23.08C25.5333 22.7067 26.5733 22.2 27.48 21.56C28.3867 20.8667 29.1333 20.04 29.72 19.08C30.3067 18.0667 30.6 16.92 30.6 15.64C30.6 14.4667 30.3333 13.4267 29.8 12.52C29.2667 11.56 28.5467 10.76 27.64 10.12C26.7867 9.42666 25.7733 8.92 24.6 8.6C23.48 8.22666 22.28 8.04 21 8.04C19.72 8.04 18.4933 8.22666 17.32 8.6C16.2 8.97333 15.1867 9.50666 14.28 10.2C13.4267 10.84 12.7333 11.64 12.2 12.6C11.72 13.56 11.48 14.6267 11.48 15.8Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__number">09</span>
+          <p>Козловой кран</p>
+          <svg width="42" height="59" viewBox="0 0 42 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.72 20C0.72 17.28 1.25333 14.72 2.32 12.32C3.38667 9.92 4.82667 7.84 6.64 6.08C8.50667 4.26666 10.6933 2.85333 13.2 1.84C15.7067 0.826663 18.4 0.319997 21.28 0.319997C24.3733 0.319997 27.2 0.906664 29.76 2.08C32.32 3.2 34.5067 4.85333 36.32 7.04C38.1333 9.17333 39.52 11.8133 40.48 14.96C41.4933 18.0533 42 21.5733 42 25.52C42 30.96 41.4667 35.7333 40.4 39.84C39.3867 43.8933 37.9467 47.28 36.08 50C34.2133 52.7733 31.92 54.8533 29.2 56.24C26.5333 57.6267 23.5733 58.32 20.32 58.32C16.6933 58.32 13.36 57.4933 10.32 55.84C7.33333 54.1867 4.90667 51.84 3.04 48.8L8.24 43.36C9.46667 45.6 11.1467 47.36 13.28 48.64C15.4667 49.9733 17.8667 50.64 20.48 50.64C24.48 50.64 27.6533 48.96 30 45.6C32.4 42.1867 33.6533 37.4133 33.76 31.28C32.64 33.68 30.88 35.5733 28.48 36.96C26.1333 38.3467 23.44 39.04 20.4 39.04C17.6267 39.04 15.04 38.56 12.64 37.6C10.24 36.5867 8.16 35.2267 6.4 33.52C4.64 31.8133 3.25333 29.8133 2.24 27.52C1.22667 25.1733 0.72 22.6667 0.72 20ZM21.2 7.84C19.5467 7.84 17.9733 8.16 16.48 8.8C15.04 9.44 13.76 10.32 12.64 11.44C11.5733 12.56 10.72 13.8667 10.08 15.36C9.44 16.8 9.12 18.3467 9.12 20C9.12 21.6533 9.44 23.2 10.08 24.64C10.72 26.08 11.5733 27.36 12.64 28.48C13.76 29.5467 15.04 30.4 16.48 31.04C17.9733 31.68 19.5467 32 21.2 32C22.8533 32 24.4 31.68 25.84 31.04C27.3333 30.4 28.6133 29.5467 29.68 28.48C30.8 27.36 31.68 26.08 32.32 24.64C32.96 23.2 33.28 21.6533 33.28 20C33.28 18.3467 32.96 16.8 32.32 15.36C31.68 13.8667 30.8 12.56 29.68 11.44C28.6133 10.32 27.3333 9.44 25.84 8.8C24.4 8.16 22.8533 7.84 21.2 7.84Z" fill="black" fill-opacity="0.03"/>
+          </svg>
+        </li>
+      </ul>
+    </section>
+
+    <section class="map">
       <div class="wrapper">
-        <h2 class="advantages__title section__title"></h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <span class="advantages__number">01</span>
-            <p class="advantages__text">11,5 га площадь базы</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">02</span>
-            <p class="advantages__text">2 своих тепловоза</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">03</span>
-            <p class="advantages__text">Повышенный путь для выгрузки инертных грузов</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">04</span>
-            <p class="advantages__text">8 км от центра Казани</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">05</span>
-            <p class="advantages__text">Возможность выгрузки хопров и сыпучих грузов</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">06</span>
-            <p class="advantages__text">Железнодорожные весы на 2 вагона</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">07</span>
-            <p class="advantages__text">Автомобильные весы 18 м на 80 тонн</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">08</span>
-            <p class="advantages__text">3 пандуса для выгрузки и загрузки крытых вагонов и фур</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">09</span>
-            <p class="advantages__text">Козловой кран</p>
-          </li>
-        </ul>
+        <h2>Карта территорий</h2>
+        <picture>
+          <source type="image/webp" data-srcset="img/map__map@1x.webp 1x, img/map__map@2x.webp 2x">
+          <img class="map__img lazy" data-src="img/map__map@1x.png" data-srcset="img/map__map@2x.png 2x" alt="Карта территорий"
+            width="1108" height="691">
+        </picture>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="map">
-      <h2 class="map__title section__title">Карта территорий</h2>
-      <img src="" alt="" class="map__img">
-    </section> -->
-
-    <!-- <section class="offers">
-      <div class="offers__offer offer offer--light">
+    <section class="rent">
+      <div class="rent__offer offer offer--padding offer--light">
         <div class="wrapper">
-          <img src="" alt="" class="offer__img">
+          <div class="offer__img-wrapper lazy offer__img-wrapper--shadow">
+          </div>
           <div class="offer__text-wrapper">
-            <h2 class="offer__title">Аренда земли</h2>
-            <p class="offer__text">Предлагаем в аренду открытые площадки для хранения грузов и техники. Площадь базы
-              составляет 11,5га. Общая протяженность внутренних ж/д путей позволяет производить погрузо-разгрузочные
-              работы до 60 вагонов в сутки единовременно. На базе работают два маневровых собственных тепловоза. Есть
-              железнодорожные и автомобильные весы, козловой кран, повышенный путь, пандусы для выгрузки крытых вагонов
+            <h2>Аренда земли</h2>
+            <p>Предлагаем в аренду открытые площадки для хранения  грузов и техники. Площадь базы
+              составляет 11,5га. Общая  протяженность внутренних ж/д путей позволяет  производить погрузо-разгрузочные
+              работы до 60 вагонов в  сутки единовременно. На базе работают два  маневровых  собственных тепловоза. Есть
+              железнодорожные  и автомобильные весы, козловой кран, повышенный  путь, пандусы для выгрузки крытых вагонов
               и фур.</p>
-            <a href="" class="offer__link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+            <a href="#" class="offer__link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
           </div>
         </div>
       </div>
-      <div class="offers__offer offer offer--dark">
+      <div class="rent__offer offer offer--dark">
         <div class="wrapper">
-          <img src="" alt="" class="offer__img">
+          <div class="offer__img-wrapper lazy offer__img-wrapper--abs">
+          </div>
           <div class="offer__text-wrapper">
-            <h2 class="offer__title">Аренда складов</h2>
-            <p class="offer__text">Предлагаем в аренду крытые и открытые складские и производственные площадки. Склады
-              комплекса оснащены погрузочно-разгрузочной техникой. Открытые складские площадки приспособлены и для
-              хранения негабаритных грузов. Собственный ж.д. подъездной путь. Охраняемая территория, удобные подъездные
-              пути для любых видов транспорта. На закрытой территории базы обеспечивается функционирование всех
+            <h2>Аренда складов</h2>
+            <p>Предлагаем в аренду крытые и открытые складские и производственные площадки. Склады
+              комплекса оснащены погрузочно-разгрузочной техникой. Открытые складские площадки  приспособлены и для
+              хранения негабаритных грузов. Собственный  ж.д. подъездной путь. Охраняемая территория, удобные подъездные
+              пути для любых видов транспорта. На закрытой территории базы  обеспечивается функционирование всех
               инженерных сетей.</p>
-            <a href="" class="offer__link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+            <a href="#" class="offer__link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
+
+    <section class="info">
+      <div class="wrapper">
+        <h2>УЗНАТЬ О ЦЕНАХ, ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ИЛИ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ</h2>
+        <form action="post" class="info__form form">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Телефон" id="phone-mask">
+          <input type="submit" value="ОТПРАВИТЬ">
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="wrapper">
-      <h2 class="footer__title section__title">УЗНАТЬ О ЦЕНАХ, ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ИЛИ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ</h2>
-      <form action="" class="footer__form form">
-        <input type="text" class="form__item" name='name' placeholder="Имя">
-        <input type="tel" class="form__item" name='phone' placeholder="Телефон">
-        <input type="submit" class="form__item" value="ОТПРАВИТЬ">
-      </form>
+      <div class="footer__logo">
+        <a class="footer-link" href="#">Veles</a>
+      </div>
+      <nav class="footer__menu menu">
+        <ul class="menu__list menu__list--footer">
+          <li class="menu__item"><a href="#" class="menu__link header-link">ЗЕМЛЯ</a></li>
+          <li class="menu__item"><a href="#" class="menu__link header-link">крановые площадки</a></li>
+          <li class="menu__item"><a href="#" class="menu__link header-link">выгрузка вагонов</a></li>
+          <li class="menu__item"><a href="#" class="menu__link header-link">фасовка</a></li>
+          <li class="menu__item"><a href="#" class="menu__link header-link">щебень</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__contacts contacts">
+        <li class="contacts__item"><a href="tel:+79276784514" class="contacts__link header-link">+7 (927) 678-45-14</a>
+        </li>
+        <li class="contacts__item"><a href="#" class="contacts__link footer-link footer-link--smaller">г. Казань,
+            Складская 20</a></li>
+      </ul>
     </div>
-  </footer> -->
+  </footer>
+
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

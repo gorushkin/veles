@@ -1,0 +1,118 @@
+.info {
+  padding-top: 77px;
+  padding-bottom: 82px;
+  background: $color-white;
+
+  @include mobile {
+    padding-top: 35px;
+    padding-bottom: 39px;
+  }
+}
+
+.info h2 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  max-width: 700px;
+  margin-left: 286px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  @include tablet {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    margin-bottom: 17px;
+  }
+}
+
+.form {
+  max-width: 700px;
+  display: flex;
+  margin-left: 290px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    max-width: 450px;
+  }
+}
+
+.form input {
+  width: 249px;
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  background: #eff0f1;
+  padding: 16px 20px 16px 20px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  color: $color-black;
+  font-weight: 600;
+  border-radius: 0;
+
+
+  &:hover,
+  &:focus {
+    border: 2px solid $color-black;
+    outline: none;
+  }
+
+  @include mobile {
+    margin-bottom: 19px;
+    padding: 14px 20px;
+  }
+
+  &::placeholder {
+    color: rgba(22, 22, 22, 0.5);
+  }
+
+  &[type="submit"] {
+    width: 170px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    background: $color-dark;
+    font-size: 12px;
+    line-height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover,
+    &:focus {
+      background: $color-white;
+      color: $color-black;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.form input:-ms-input-placeholder {
+  color: rgba(22, 22, 22, 0.5);
+}

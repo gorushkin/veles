@@ -5,27 +5,55 @@
   margin-right: 0;
 
   @include tablet {
-    width: 100%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  @include tablet {
+    opacity: 0.4;
   }
 }
 
 .swiper-slide {
   background: url("../img/slide_1@1x.jpg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
+
 
   @include tablet {
     background-size: cover;
+    width: auto 100%;
   }
 }
 
 .swiper-controls {
-  width: 200px;
+  width: 131px;
   position: absolute;
-  bottom: 150px;
+  bottom: 112px;
+  right: 1006px;
+  font-size: 18px;
+  line-height: 8px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // outline: 2px solid red;
+
+  @media (max-width: 1180px) {
+    right: auto;
+    left: 10px;
+  }
 
   @include tablet {
-    right: 20px;
     bottom: 10px;
+    right: 10px;
+    left: auto;
+    width: 110px;
   }
 }
 
@@ -35,15 +63,33 @@
   font-size: 0;
 
   &--prev {
-    background: url("../../img/arrow-prev.svg") no-repeat center;
+    background: url("../img/arrow-prev.svg") no-repeat center;
   }
 
   &--next {
-    background: url("../../img/arrow-next.svg") no-repeat center;
+    background: url("../img/arrow-next.svg") no-repeat center;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 0;
+}
+
+
+.swiper-pagination {
+  position: static;
+  margin-left: 6px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  margin-top: 0;
 }

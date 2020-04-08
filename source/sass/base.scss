@@ -19,12 +19,6 @@ ol {
 a {
   color: currentColor;
   text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: currentColor;
-  }
 }
 
 *,
@@ -67,13 +61,35 @@ body {
   min-width: 320px;
   font-family: $font-main;
   color: $color-black;
-  background: black;
+  background: $color-grey;
 }
 
 .wrapper {
   width: 100%;
-  // max-width: $desktop-width;
-  max-width: $tablet-width;
+  max-width: $tablet;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
+
+  @include tablet {
+    padding: 0 15px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  padding: 40px 0;
+
+  @include mobile {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0;
+  }
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

@@ -1,0 +1,38 @@
+.map {
+  background: $color-white;
+  padding-top: 46px;
+  padding-bottom: 60px;
+
+  .wrapper {
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  @include mobile {
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
+}
+
+.map h2 {
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include mobile {
+    margin-bottom: 13px;
+  }
+}
+
+.map__img {
+  max-width: 100%;
+  width: 1108px;
+  display: block;
+  height: auto;
+  margin-left: 5px;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+}

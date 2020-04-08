@@ -1,0 +1,260 @@
+.rent {
+  padding-top: 39px;
+  padding-bottom: 120px;
+  background: $color-white;
+  position: relative;
+  z-index: 0;
+
+  @include tablet {
+    padding-bottom: 25px;
+  }
+
+  @include mobile {
+    padding-top: 29px;
+    padding-bottom: 25px;
+  }
+
+  .wrapper {
+    max-width: 1170px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+  }
+}
+
+.rent__offer {
+  @include mobile {
+    margin-bottom: 65px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.offer {
+  &--padding {
+    padding-top: 90px;
+    padding-bottom: 98px;
+
+    @include tablet {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  &--dark {
+    background: $color-black;
+    color: $color-white;
+    padding-top: 205px;
+    padding-bottom: 109px;
+    position: relative;
+
+    @include tablet {
+      padding-top: 150px;
+    }
+
+    @include mobile {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.offer h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.13em;
+  margin-bottom: 24px;
+  padding: 0;
+  text-align: left;
+
+  @include mobile {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.offer--dark h2 {
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.offer p {
+  font-size: 15px;
+  line-height: 18px;
+  max-width: 460px;
+  margin-bottom: 45px;
+  text-align: justify;
+
+  @include mobile {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+}
+
+
+.offer--dark p {
+  margin-bottom: 24px;
+
+  @include mobile {
+    margin-bottom: 42px;
+  }
+}
+
+.offer__link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: $color-black;
+  color: $color-white;
+  padding: 20px 33px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid $color-white;
+  transition: all 0.1s;
+
+  &:hover,
+  &:focus {
+    background: $color-white;
+    color: $color-black;
+    outline: 2px solid $color-black;
+  }
+
+  @include tablet {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-width: 350px;
+    margin-bottom: 35px;
+  }
+}
+
+.offer__img-wrapper.lazy {
+  background-image: none;
+  background-color: #f1f1fa;
+}
+
+.offer__img-wrapper {
+  position: relative;
+  width: 50%;
+  height: 488px;
+  order: 2;
+  max-width: 570px;
+  background: url("../img/rent__img1@1x.jpg") center no-repeat;
+  // overflow: hidden;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background: url("../img/rent__img1@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &--shadow::before {
+    position: absolute;
+    content: "";
+    // width: 547px;
+    height: 487px;
+    z-index: -1;
+    top: -66px;
+    // right: 84px;
+    width: 96%;
+    left: -60px;
+    background: $color-grey;
+
+    // box-shadow: -58px -66px 0 0 $color-grey;
+
+    @include mobile {
+      box-shadow: none;
+      content: none;
+    }
+  }
+
+  @include mobile {
+    order: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 250px;
+  }
+
+  &--abs {
+    position: absolute;
+    max-width: 50%;
+    width: 945px;
+    height: 570px;
+    top: 133px;
+    right: 0;
+    background: url("../img/rent__img2@1x.jpg") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background: url("../img/rent__img2@2x.jpg") no-repeat center;
+      background-size: cover;
+    }
+
+    @include tablet {
+      position: static;
+      top: auto;
+      right: auto;
+
+      @include mobile {
+        margin-top: -40px;
+        width: 100%;
+        height: 250px;
+        max-width: none;
+      }
+    }
+  }
+}
+
+.offer__img {
+  width: 100%;
+  height: auto;
+
+  &--shadow {
+    box-shadow: -58px -66px 0 0 $color-grey;
+
+    @include mobile {
+      box-shadow: none;
+    }
+  }
+}
+
+.offer__text-wrapper {
+  order: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 50%;
+  padding-top: 91px;
+  position: relative;
+  z-index: 5;
+  margin-right: auto;
+
+  @include mobile {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.offer--dark .offer__text-wrapper {
+  padding-top: 0;
+}
