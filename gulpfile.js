@@ -16,6 +16,8 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var ghPages = require('gh-pages');
+var path = require('path');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -110,6 +112,10 @@ gulp.task("modulesJs", function() {
   return gulp.src('source/js/modules/*.js')
   .pipe(concat('main.js'))
   .pipe(gulp.dest('build/js'));
+})
+
+gulp.task("deploy", function(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
 })
 
 gulp.task("js", gulp.parallel("vendorJs", "modulesJs"));
